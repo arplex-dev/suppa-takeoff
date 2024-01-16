@@ -8,7 +8,7 @@ html {
 }
 
 .main {
-	background-image: url(/assets/img/slide1.jpg);
+	background-image: url(assets/img/slide1.jpg);
 	display: flex;
 	justify-content: center;
 	height: 92vh;
