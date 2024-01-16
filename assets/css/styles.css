@@ -1,0 +1,52 @@
+body,
+html {
+	margin: 0;
+}
+
+.fallback {
+	display: none;
+}
+
+.main {
+	background-image: url(/assets/img/slide1.jpg);
+	display: flex;
+	justify-content: center;
+	height: 92vh;
+	width: 100vw;
+	background-position: center;
+	min-height: 350px;
+	min-height: 350px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cta-container {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	font-family: Satisfy;
+	color: white;
+	text-shadow: 0 1px 3px #0000009e;
+}
+
+.cta-container img {
+	width: 60%;
+}
+
+.cta-container h1 {
+	font-weight: 400;
+    font-size: 6rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    margin: 36px 0;
+}
+
+.cta-container div.description {
+	top: -34px;
+    position: relative;
+    left: 53px;
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+}
