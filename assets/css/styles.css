@@ -28,6 +28,7 @@ html {
 	font-family: Satisfy;
 	color: white;
 	text-shadow: 0 1px 3px #0000009e;
+	padding: 32px;
 }
 
 .cta-container img {
@@ -46,7 +47,23 @@ html {
 .cta-container div.description {
 	top: -34px;
     position: relative;
+	display: inline;
     left: 53px;
     font-size: 1.2rem;
     font-family: 'Open Sans';
+}
+
+.badge-natural {
+	position: absolute;
+    top: -55px;
+    max-width: 26%;
+    min-width: 100px;
+    width: 200px;
+    left: 2rem;
+}
+
+.section {
+	position: relative;
+    width: 100vw;
+    height: 1050px;
 }
