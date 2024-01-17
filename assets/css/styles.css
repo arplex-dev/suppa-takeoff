@@ -18,6 +18,7 @@ html {
 	min-height: 350px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .cta-container {
@@ -66,4 +67,40 @@ html {
 	position: relative;
     width: 100vw;
     height: 1050px;
+}
+
+.contact-btn {
+	color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1.8rem;
+    border-radius: 50px;
+	box-shadow: 1px 0px 6px #000000b8;
+    padding: 4px 20px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    margin: 0rem 0;
+	transition: text-shadow .6s, background-color .6s, color .6s, border-color .6s;
+}
+
+.contact-btn:hover {
+	background-color: rgba(255, 255, 255, .95);
+    color: #be9f66;
+    text-shadow: none;
+    border-color: #be9f66;
+}
+
+@media (hover: none) {
+    .contact-btn {
+		background-color: rgba(255, 255, 255, .95);
+		color: #be9f66;
+		text-shadow: none;
+		border-color: #be9f66;
+	}
+}
+
+@media (max-height: 600px) {
+	.main {
+		height: auto;
+	}
 }
