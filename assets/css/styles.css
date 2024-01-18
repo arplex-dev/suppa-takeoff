@@ -1,6 +1,7 @@
 body,
 html {
 	margin: 0;
+	background-color: rgb(253, 252, 250);
 }
 
 .fallback {
@@ -27,7 +28,7 @@ html {
 	justify-content: center;
 	align-items: center;
 	font-family: Satisfy;
-	color: white;
+	color: #fdfcfa;
 	text-shadow: 0 1px 3px #0000009e;
 	padding: 32px;
 }
@@ -68,7 +69,7 @@ html {
 .contact-btn,
 .contact-btn-simple {
 	font-family: Satisfy;
-	color: white;
+	color: #fdfcfa;
 	text-decoration: none;
 	font-size: 1.8rem;
 	border-radius: 50px;
@@ -80,14 +81,14 @@ html {
 }
 
 .contact-btn {
-	border: 2px solid white;
+	border: 2px solid #fdfcfa;
 	box-shadow: 1px 0px 6px #000000b8;
 	backdrop-filter: blur(2px);
 }
 
 .contact-btn:hover,
 .contact-btn-simple {
-	background-color: rgba(255, 255, 255, .95);
+	background-color: rgba(253, 252, 250, .95);
 	color: #be9f66;
 	text-shadow: none;
 	border: 2px solid #be9f66;
@@ -195,7 +196,7 @@ html {
 
 @media (hover: none) {
 	.contact-btn {
-		background-color: rgba(255, 255, 255, .95);
+		background-color: rgba(253, 252, 250, .95);
 		color: #be9f66;
 		text-shadow: none;
 		border-color: #be9f66;
