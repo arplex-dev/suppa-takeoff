@@ -8,9 +8,9 @@
 * robots.txt -> OK
 
 
-* Translation
-* Bg-wrapper img rel-aspect is broken with small width
-* Compress images (see lighthouse)
 * Logo quadrat colors suppa cta logo
+    * Bg-wrapper img rel-aspect is broken with small width
+* Compress images (see lighthouse)
+* Translation
 * Aviso legal
 * Politica de cookies
