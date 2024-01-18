@@ -12,3 +12,5 @@
 * Bg-wrapper img rel-aspect is broken with small width
 * Compress images (see lighthouse)
 * Logo quadrat colors suppa cta logo
+* Aviso legal
+* Politica de cookies
