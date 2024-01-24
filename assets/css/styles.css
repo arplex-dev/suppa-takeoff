@@ -177,6 +177,8 @@ html {
 	position: relative;
 	padding: 2em;
 	border-top: 4px solid #be9f66;
+	flex-direction: column;
+	gap: 1.5em;
 }
 
 .footer:before {
@@ -192,6 +194,25 @@ html {
 
 .footer img {
 	max-width: 140px;
+}
+
+.footer .links {
+	display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.footer .links a {
+	color: #be9f66;
+	font-family: 'Satisfy';
+    font-size: 1.2rem;
+}
+
+.footer .links a:hover {
+	text-decoration: none;
 }
 
 @media (hover: none) {

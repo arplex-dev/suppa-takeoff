@@ -7,9 +7,10 @@
 * Pasar lighthouse -> OK
 * robots.txt -> OK
 * Translation -> OK
+* Compatibilitzar SEO al 100% -> OK
 
-
-* Compatibilitzar SEO al 100%
+* Links en logos
+* Cookies banner
 * Logo quadrat colors suppa cta logo
     * Bg-wrapper img rel-aspect is broken with small width
 * Compress images (see lighthouse)
