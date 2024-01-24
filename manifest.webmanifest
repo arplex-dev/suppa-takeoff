@@ -1,8 +1,10 @@
 {
     "theme_color": "#be9f66",
     "background_color": "#fdfcfa",
-    "display": "minimal-ui",
+    "display_override": ["minimal_ui", "browser"],
+    "display": "browser",
     "scope": "/",
+    "id": "/",
     "start_url": "/",
     "name": "Suppa Cups",
     "short_name": "Suppa",
