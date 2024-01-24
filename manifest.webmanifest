@@ -1,7 +1,7 @@
 {
     "theme_color": "#be9f66",
     "background_color": "#fdfcfa",
-    "display_override": ["minimal_ui", "browser"],
+    "display_override": ["minimal-ui"],
     "display": "browser",
     "scope": "/",
     "id": "/",
