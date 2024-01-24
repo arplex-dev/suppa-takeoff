@@ -2,7 +2,7 @@
     height: auto;
 }
 
-.cta-container img {
+.cta-container .logo-wrapper {
     width: 45%;
 }
 

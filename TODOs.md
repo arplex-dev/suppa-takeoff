@@ -12,9 +12,11 @@
 * Links en logos -> OK
 * Aviso legal -> OK
 * Politica de cookies -> OK
+* Logo quadrat colors suppa cta logo -> OK
+* Bg-wrapper img rel-aspect is broken with small width -> OK
 
-* Logo quadrat colors suppa cta logo
-    * Bg-wrapper img rel-aspect is broken with small width
+
 * Añadir tipos de capsulas
 * Cookies banner
 * Compress images (see lighthouse)
+* Afegir www.suppacaps.com al apex (https://stackoverflow.com/questions/67043175/how-can-i-get-github-pages-to-give-a-correct-ssl-certificate-for-my-www-subdomain)
