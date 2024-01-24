@@ -2,6 +2,7 @@ body,
 html {
 	margin: 0;
 	background-color: rgb(253, 252, 250);
+	scroll-behavior: smooth;
 }
 
 .fallback {
@@ -213,6 +214,10 @@ html {
 
 .footer .links a:hover {
 	text-decoration: none;
+}
+
+.logo-wrapper {
+	display: contents;
 }
 
 @media (hover: none) {
