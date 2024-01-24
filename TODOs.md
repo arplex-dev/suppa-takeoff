@@ -14,7 +14,7 @@
 * Politica de cookies -> OK
 * Logo quadrat colors suppa cta logo -> OK
 * Bg-wrapper img rel-aspect is broken with small width -> OK
-
+* Solucionar tema imágenes con borde del grid gallery -> OK
 
 * Añadir tipos de capsulas
 * Cookies banner
