@@ -28,15 +28,16 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: Satisfy;
+	font-family: 'Satisfy';
 	color: #fdfcfa;
 	text-shadow: 0 1px 3px #0000009e;
 	padding: 32px;
+	padding-top: 0;
 }
 
 .cta-container img {
 	width: 60%;
-	aspect-ratio: auto 492/337;
+	aspect-ratio: auto 1/1;
 	height: auto;
 }
 

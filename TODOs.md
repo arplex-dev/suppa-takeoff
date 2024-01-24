@@ -9,12 +9,12 @@
 * Translation -> OK
 * Compatibilitzar SEO al 100% -> OK
 * Politica de privacidad -> OK
+* Links en logos -> OK
+* Aviso legal -> OK
+* Politica de cookies -> OK
 
-* Aviso legal
-* Politica de cookies
-* Links en logos
-* Añadir tipos de capsulas
-* Cookies banner
 * Logo quadrat colors suppa cta logo
     * Bg-wrapper img rel-aspect is broken with small width
+* Añadir tipos de capsulas
+* Cookies banner
 * Compress images (see lighthouse)
