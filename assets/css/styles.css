@@ -10,7 +10,7 @@ html {
 }
 
 .main {
-	background-image: url("../img/slide1.jpg");
+	background-image: url("../img/slide1.webp");
 	display: flex;
 	justify-content: center;
 	height: 92vh;
@@ -114,7 +114,7 @@ html {
 	padding: 10% 6%;
 	justify-content: center;
 	align-items: center;
-	background-image: url("../img/texture.jpg");
+	background-image: url("../img/texture.webp");
 	background-repeat: repeat;
 }
 
