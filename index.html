@@ -25,11 +25,17 @@
 	<link rel="apple-touch-icon" href="/assets/img/suppa.png" />
 	<meta name="msapplication-TileImage" content="/assets/img/suppa.png" />
 
+	<!-- region preconnects -->
+	<link rel="dns-prefetch" href="https://google-analytics.com">
+	<link rel="preconnect" href="https://google-analytics.com" crossorigin>
+	<!-- endregion preconnects-->
+	
 	<!-- region preloads -->
-	<link rel="preload" href="/assets/img/slide1.jpg">
+	<link rel="preload" href="/assets/img/slide1.jpg" as="image">
 	<!-- endregion preloads -->
 
 	<!-- region fonts -->
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" as="style"
 		href="https://fonts.googleapis.com/css?family=Satisfy:400italic,600italic,300,400,600,700,800|Open+Sans:600%2C400%7CRaleway%3A300%2C400%2C500%2C600%2C700%2C800%2C900&subset=latin,latin-ext,cyrillic,cyrillic-ext&display=swap">
@@ -92,10 +98,10 @@
 				<a class="contact-btn-simple" href="mailto:info@suppacaps.com">Contacta</a>
 			</div>
 			<div class="images images-cta">
-				<img src="/assets/img/suppa-block-1.jpg" alt="Caldo de pollo" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-2.jpg" alt="Caldo de verduras" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-3.jpg" alt="Miso instantáneo" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-4.jpg" alt="Caldo de carne" loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-1.jpg" height="270" width="270" alt="Caldo de pollo" loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-2.jpg" height="270" width="270" alt="Caldo de verduras" loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-3.jpg" height="270" width="270" alt="Miso instantáneo" loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-4.jpg" height="270" width="270" alt="Caldo de carne" loading="lazy" decoding="async">
 			</div>
 		</div>
 	</div>
