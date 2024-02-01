@@ -4,11 +4,11 @@
     "display_override": ["minimal-ui"],
     "display": "browser",
     "scope": "/",
-    "id": "/",
-    "start_url": "/",
-    "name": "Suppa Cups",
+    "id": "/?utm_source=homescreen-id",
+    "start_url": "/?utm_source=homescreen",
+    "name": "Suppa Caps",
     "short_name": "Suppa",
-    "description": "Suppa Cups - Caldo en cápsulas",
+    "description": "Suppa Caps - Caldo en cápsulas",
     "icons": [
         {
             "src": "assets/img/icons/maskable_icon_x48.png",

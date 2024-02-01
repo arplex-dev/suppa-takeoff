@@ -7,34 +7,37 @@
 		content="Caldo en cápsulas, compatible con Nespresso. Escoge entre caldo de pollo, caldo de verduras, miso instantáneo, caldo de carne y caldo de pescado.">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="manifest" href="manifest.webmanifest">
 	<link rel="robots" href="robots.txt">
-	<meta name='robots' content='max-image-preview:large' />
 	<link rel="canonical" href="https://suppacaps.com">
+	<meta name='robots' content='max-image-preview:large' />
 
-	<!-- region OG Media-->
-	<meta property='og:title' content='Suppa Caps - Caldo en cápsulas' />
-	<meta property='og:image' content='https://suppacaps.com/assets/img/suppa.png' />
-	<meta property='og:description'
-		content='Caldo en cápsulas, compatible con Nespresso. Escoge entre caldo de pollo, caldo de verduras, miso instantáneo, caldo de carne y caldo de pescado.' />
-	<!-- endregion OG Media-->
 	<meta name="theme-color" content="#be9f66" />
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="icon" href="/assets/img/suppa-150x86.png" sizes="32x32" />
 	<link rel="icon" href="/assets/img/suppa.png" sizes="192x192" />
 	<link rel="apple-touch-icon" href="/assets/img/suppa.png" />
 	<meta name="msapplication-TileImage" content="/assets/img/suppa.png" />
 
-	<!-- region preconnects -->
+	<!-- #region OG Media-->
+	<meta property='og:title' content='Suppa Caps - Caldo en cápsulas' />
+	<meta property='og:image' content='https://suppacaps.com/assets/img/suppa.png' />
+	<meta property='og:description'
+		content='Caldo en cápsulas, compatible con Nespresso. Escoge entre caldo de pollo, caldo de verduras, miso instantáneo, caldo de carne y caldo de pescado.' />
+	<!-- #endregion OG Media-->
+
+	<!-- #region preconnects -->
 	<link rel="dns-prefetch" href="https://google-analytics.com">
 	<link rel="preconnect" href="https://google-analytics.com" crossorigin>
-	<!-- endregion preconnects-->
-	
-	<!-- region preloads -->
-	<link rel="preload" href="/assets/img/slide1.webp" as="image">
-	<!-- endregion preloads -->
+	<!-- #endregion preconnects-->
 
-	<!-- region fonts -->
+	<!-- #region preloads -->
+	<link rel="preload" href="/assets/img/slide1.webp" as="image" fetchpriority="high">
+	<!-- #endregion preloads -->
+
+	<link rel="stylesheet" href="/assets/css/styles.css">
+
+	<!-- #region fonts -->
 	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" as="style"
@@ -45,14 +48,14 @@
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Satisfy:400italic,600italic,300,400,600,700,800|Open+Sans:600%2C400%7CRaleway%3A300%2C400%2C500%2C600%2C700%2C800%2C900&subset=latin,latin-ext,cyrillic,cyrillic-ext&display=swap">
 	</noscript>
-	<!--endregion fonts-->
+	<!-- #endregion fonts-->
 
-	<link rel="stylesheet" href="/assets/css/styles.css" async defer>
 
+	<!-- #region google-->
 	<meta name="google-site-verification" content="Axa9X6Wo3d7UPa6Ewwt0PHG1X1RGajSQG8cs7bwGA0A" />
 
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JDSNF66H5Q"></script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-JDSNF66H5Q"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -60,13 +63,16 @@
 
 		gtag('config', 'G-JDSNF66H5Q');
 	</script>
+	<!-- #endregion google-->
+
+	<!-- #region own scripts-->
+	<script src="/assets/js/cookies-banner.js" defer async></script>
+	<!-- #endregion own scripts-->
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFZ5VNM4" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 	<h1 class="fallback">
 		Suppa Caps
 	</h1>
@@ -75,7 +81,7 @@
 	</h2>
 	<div class="main" id="cta">
 		<div class="cta-container">
-			<a href="/#cta" class="logo-wrapper">
+			<a class="logo-wrapper">
 				<img src="/assets/img/supp-rounded-logo-white-shadowed.webp" height="492" width="492"
 					alt="Suppa Caps - Caldo en cápsulas">
 			</a>
@@ -98,10 +104,14 @@
 				<a class="contact-btn-simple" href="mailto:info@suppacaps.com">Contacta</a>
 			</div>
 			<div class="images images-cta">
-				<img src="/assets/img/suppa-block-1.webp" height="270" width="270" alt="Caldo de pollo" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-2.webp" height="270" width="270" alt="Caldo de verduras" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-3.webp" height="270" width="270" alt="Miso instantáneo" loading="lazy" decoding="async">
-				<img src="/assets/img/suppa-block-4.webp" height="270" width="270" alt="Caldo de carne" loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-1.webp" height="270" width="270" alt="Caldo de pollo" loading="lazy"
+					decoding="async">
+				<img src="/assets/img/suppa-block-2.webp" height="270" width="270" alt="Caldo de verduras"
+					loading="lazy" decoding="async">
+				<img src="/assets/img/suppa-block-3.webp" height="270" width="270" alt="Miso instantáneo" loading="lazy"
+					decoding="async">
+				<img src="/assets/img/suppa-block-4.webp" height="270" width="270" alt="Caldo de carne" loading="lazy"
+					decoding="async">
 			</div>
 		</div>
 	</div>

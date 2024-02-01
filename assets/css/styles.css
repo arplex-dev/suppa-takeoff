@@ -208,12 +208,15 @@ html {
     gap: 1.5em;
 }
 
-.footer .links a {
+.footer .links a, .link {
 	color: #be9f66;
+}
+
+.footer .links a {
 	font-family: 'Raleway';
 }
 
-.footer .links a:hover {
+.footer .links a:hover, .link:hover {
 	text-decoration: none;
 }
 
@@ -225,6 +228,44 @@ html {
 	width: 60%;
 	display: flex;
 	flex: 0;
+}
+
+.can-disable {
+	transition: opacity 1s;
+}
+
+.disabled {
+	opacity: 0 !important;
+}
+
+.cookies-banner {
+	font-family: 'Raleway';
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+    padding: 1rem 2rem;
+    margin: 3rem 2rem;
+    background: rgb(253 252 250 / 90%);
+    border-radius: 60px;
+    gap: 1rem;
+    border: 2px solid #be9f66;
+    backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	opacity: 1;
+}
+
+.cookies-banner .banner-content {
+	text-align: center;
+	text-shadow: 0 1px 3px #ffffffd1;
+}
+
+#close-button {
+	text-decoration: none;
+	cursor: pointer;
 }
 
 @media (hover: none) {
