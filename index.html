@@ -67,6 +67,7 @@
 
 	<!-- #region own scripts-->
 	<script src="/assets/js/cookies-banner.js" defer async></script>
+	<script src="/assets/js/main.js" defer async></script>
 	<!-- #endregion own scripts-->
 </head>
 
@@ -95,6 +96,98 @@
 	<div class="section secondary-action">
 		<img class="badge-natural" src="/assets/img/seal.webp" alt="Con ingredientes naturales"
 			title="Con ingredientes naturales" loading="lazy" decoding="async">
+		<div class="store" id="store">
+			<div class="store-elem">
+				<div class="header">
+					<img src="/assets/img/suppa-pollo.webp" loading="lazy" decoding="async"
+						alt="Caldo de pollo en cápsulas para Nespresso">
+				</div>
+				<div class="content">
+					<h2 class="name">Caldo de pollo</h2>
+					<p class="description">
+						Seguramente el caldo más universal y reconfortante para cualquier día. Goza de todo el sabor de
+						un caldo de pollo tradicional.
+					</p>
+					<div class="input-number-plus-minus">
+						<button onclick="decreaseBoxes('boxes-chickenBoxesInput')">-</button>
+						<input type="number" min="0" id="boxes-chickenBoxesInput" value="0">
+						<button onclick="increaseBoxes('boxes-chickenBoxesInput')">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="store-elem">
+				<div class="header">
+					<img src="/assets/img/suppa-vegetables.webp" loading="lazy" decoding="async"
+						alt="Caldo de verduras en cápsulas para Nespresso">
+				</div>
+				<div class="content">
+					<h2 class="name">Caldo de verduras</h2>
+					<p class="description">
+						Natural, como la vida misma. Suave, fresco y agradable. Acompaña los mejores momentos con el
+						mejor caldo de verduras; sabor vegetal con unas notas de espinacas.
+					</p>
+					<div class="input-number-plus-minus">
+						<button onclick="decreaseBoxes('boxes-vegetalBoxesInput')">-</button>
+						<input type="number" min="0" id="boxes-vegetalBoxesInput" value="0">
+						<button onclick="increaseBoxes('boxes-vegetalBoxesInput')">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="store-elem">
+				<div class="header">
+					<img src="/assets/img/suppa-miso.webp" loading="lazy" decoding="async"
+						alt="Miso en cápsulas para Nespresso">
+				</div>
+				<div class="content">
+					<h2 class="name">Miso instantáneo</h2>
+					<p class="description">
+						De Japón a la taza. Proteínas, vitaminas y sales minerales. Explora de primera mano los
+						delicados aromas orientales del famoso Miso, uno de los productos clave de la cultura japonesa.
+					</p>
+					<div class="input-number-plus-minus">
+						<button onclick="decreaseBoxes('boxes-misoBoxesInput')">-</button>
+						<input type="number" min="0" id="boxes-misoBoxesInput" value="0">
+						<button onclick="increaseBoxes('boxes-misoBoxesInput')">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="store-elem">
+				<div class="header">
+					<img src="/assets/img/suppa-carne.webp" loading="lazy" decoding="async"
+						alt="Caldo de carne en cápsulas para Nespresso">
+				</div>
+				<div class="content">
+					<h2 class="name">Caldo de carne</h2>
+					<p class="description">
+						Proporcionado y gustoso. Para los amantes del sabor con raíces y matices. Despierta tus sentidos
+						con este sabroso caldo de carne.
+					</p>
+					<div class="input-number-plus-minus">
+						<button onclick="decreaseBoxes('boxes-meatBoxesInput')">-</button>
+						<input type="number" min="0" id="boxes-meatBoxesInput" value="0">
+						<button onclick="increaseBoxes('boxes-meatBoxesInput')">+</button>
+					</div>
+				</div>
+			</div>
+			<div class="store-elem">
+				<div class="header">
+					<img src="/assets/img/suppa-pescado.webp" loading="lazy" decoding="async"
+						alt="Caldo de pescado en cápsulas para Nespresso">
+				</div>
+				<div class="content">
+					<h2 class="name">Caldo de pescado</h2>
+					<p class="description">
+						Para los amantes del mar. Genuino y sorprendente. El mejor caldo de pescado, siguiendo las
+						antiguas recetas de los pescadores.
+					</p>
+					<div class="input-number-plus-minus">
+						<button onclick="decreaseBoxes('boxes-fishBoxesInput')">-</button>
+						<input type="number" min="0" id="boxes-fishBoxesInput" value="0">
+						<button onclick="increaseBoxes('boxes-fishBoxesInput')">+</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="suppa-gallery">
 			<div class="texts">
 				<h2>De buen caldo, buena suppa</h2>
@@ -121,6 +214,7 @@
 				loading="lazy" decoding="async">
 		</a>
 		<div class="links">
+			<a href="mailto:info@suppacaps.com">Contacta</a>
 			<a href="/politica-de-privacidad/">Política de privacidad</a>
 			<a href="/aviso-legal/">Aviso legal</a>
 			<a href="/politica-de-cookies/">Política de cookies</a>

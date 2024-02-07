@@ -1,0 +1,4 @@
+body.reduced-motion * {
+    animation: none;
+    transition: none;
+}
