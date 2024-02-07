@@ -15,8 +15,8 @@
 * Logo quadrat colors suppa cta logo -> OK
 * Bg-wrapper img rel-aspect is broken with small width -> OK
 * Solucionar tema imágenes con borde del grid gallery -> OK
+* Cookies banner -> OK
+* Compress images (see lighthouse) -> OK
 
-* Afegir www.suppacaps.com al apex (https://stackoverflow.com/questions/67043175/how-can-i-get-github-pages-to-give-a-correct-ssl-certificate-for-my-www-subdomain)
 * Añadir tipos de capsulas
-* Cookies banner
-* Compress images (see lighthouse)
+* Afegir www.suppacaps.com al apex (https://stackoverflow.com/questions/67043175/how-can-i-get-github-pages-to-give-a-correct-ssl-certificate-for-my-www-subdomain)

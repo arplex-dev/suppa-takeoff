@@ -36,15 +36,7 @@ const storeClick = (event) => {
     event.preventDefault();
     event.stopImmediatePropagation();
     const store = document.getElementById('store');
-    if (store.classList.contains('blocked'))
-        return ;
-    else {
-        store.classList.add('blocked');
-        setTimeout(() => {
-            store.classList.remove('blocked');
-        }, 2000);
-    }
-    const virtualStore = document.createElement('div');
+    // const virtualStore = document.createElement('div');
     // console.log({event: event, offsetX: event.offsetX, clientWidth: clientWidth, middle: clientWidth / 2})
     // Iterar cada elemento e ir simulando la posición la que tendrá que estar. En el momento de el cambio de DOM se tiene que resetear lo que se haga aquí
     /* const elems = store.getElementsByClassName('store-elem');
@@ -100,8 +92,6 @@ const updateView = (inputId, value = 0) => {
 const push = (direction = 'right') => {
     const store = document.getElementById('store');
     const elems = store.getElementsByClassName('store-elem');
-    store.classList.add('animated');
-    setTimeout(() => { store.classList.remove('animated') }, 2000);
     /*const virtualStore = document.createElement('div');
     [...elems].forEach(elem => {
         elem.style.order++;
@@ -110,12 +100,9 @@ const push = (direction = 'right') => {
     });*/
 
     // TODO: Push direction!!!
-
-    setTimeout(() => {
-        if (direction == 'right') {
-            store.prepend(elems[elems.length - 1]);
-        } else {
-            store.append(elems[0])
-        }
-    }, 0);
+    if (direction == 'right') {
+        store.prepend(elems[elems.length - 1]);
+    } else {
+        store.append(elems[0])
+    }
 }

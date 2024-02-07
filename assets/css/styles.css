@@ -274,7 +274,7 @@ html {
 
 .store {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	flex-direction: row;
 	margin: 4rem 0;
@@ -285,13 +285,10 @@ html {
 	min-height: 400px;
 }
 
-.store.blocked:before, .store.blocked:after {
+.store.blocked:before,
+.store.blocked:after {
 	opacity: 0.2;
 	cursor: not-allowed;
-}
-
-.store.animated > .store-elem {
-	animation: zoom-in-out 2s;
 }
 
 .store:before,
@@ -329,29 +326,18 @@ html {
 	outline: 0;
 	margin: 0 -100px;
 	z-index: 1;
-	animation: moving 2s;
-	transition: z-index 2s;
 }
 
 .store-elem .header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 70%;
-	margin: 1rem 14px;
-	border-radius: 42px;
-	box-shadow: 4px 2px 22px #00000047;
-	object-fit: cover;
-	overflow: hidden;
 	filter: blur(1.4px);
-	user-select: none;
-	transition: width 2s, margin 2s, filter 2s, border-radius 2s;
 }
 
 .store-elem .header img {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
+	user-select: none;
 }
 
 .store-elem .content {
@@ -390,7 +376,6 @@ html {
 .store-elem:first-child,
 .store-elem:last-child {
 	z-index: 0;
-	animation: moving-0 2s;
 }
 
 .store-elem:first-child .header,
@@ -401,7 +386,6 @@ html {
 
 .store-elem:nth-child(3) {
 	z-index: 10;
-	animation: moving-10 2s;
 }
 
 .store-elem:nth-child(3) .content {
@@ -448,10 +432,6 @@ html {
 	display: none;
 }
 
-.die {
-	animation: die 2s;
-}
-
 .l-0 {
 	z-index: 0;
 }
@@ -491,10 +471,6 @@ html {
 		height: auto;
 	}
 }
-
-/*@keyframes die {
-	to: 
-}*/
 
 @keyframes zoom-in-out {
 	0% {
