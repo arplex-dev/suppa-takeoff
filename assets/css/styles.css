@@ -294,15 +294,17 @@ html {
 .store:before,
 .store:after {
 	content: "";
-	background: url(/assets/img/arrow.webp);
-	width: 28px;
-	height: 28px;
-	z-index: 11;
-	position: absolute;
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	cursor: pointer;
+    background: url(/assets/img/arrow.webp);
+    width: 70px;
+    height: 70px;
+    z-index: 11;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: sticky;
+    top: 50%;
 }
 
 .store:after {
