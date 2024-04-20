@@ -1,7 +1,13 @@
+:root {
+	--store-elem-dist: 550px;
+}
+
 body,
 html {
 	margin: 0;
 	background-color: rgb(253, 252, 250);
+	max-width: 100vw;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -14,9 +20,8 @@ html {
 	display: flex;
 	justify-content: center;
 	height: 92vh;
-	width: 100vw;
+	max-width: 100vw;
 	background-position: center;
-	min-height: 350px;
 	min-height: 350px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -117,6 +122,7 @@ html {
 	align-items: center;
 	background-image: url("../img/texture.webp");
 	background-repeat: repeat;
+	gap: 8rem;
 }
 
 .suppa-gallery {
@@ -282,6 +288,7 @@ html {
 	position: relative;
 	margin-bottom: 420px;
 	max-width: 900px;
+	min-width: 600px;
 	min-height: 400px;
 }
 
@@ -295,29 +302,29 @@ html {
 .store:after {
 	content: "";
     background: url(/assets/img/arrow.webp);
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     z-index: 11;
     position: absolute;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    position: sticky;
-    top: 50%;
+    top: 150%;
 }
 
 .store:after {
 	transform: rotate(-90deg);
-	right: 0;
+	right: -50px;
 }
 
 .store:before {
 	transform: rotate(90deg);
-	left: 0;
+	left: -50px;
 }
 
 .store-elem {
+	position: absolute;
 	display: flex;
 	flex-direction: column;
 	padding: 0;
@@ -328,11 +335,15 @@ html {
 	outline: 0;
 	margin: 0 -100px;
 	z-index: 1;
+	width: 500px;
+	height: 500px;
+	transition: .5s;
 }
 
 .store-elem .header {
-	width: 70%;
-	filter: blur(1.4px);
+	transform: scale(60%);
+	filter: blur(2px);
+	transition: .2s;
 }
 
 .store-elem .header img {
@@ -349,10 +360,10 @@ html {
 	align-items: center;
 	flex-direction: column;
 	padding: 2rem 4rem;
-	min-width: 40%;
+	min-width: 60%;
 	max-height: 400px;
 	height: auto;
-	top: 106%;
+	top: 100%;
 	left: 50%;
 	background: #fdfcfa;
 	transform: translateX(-50%);
@@ -375,28 +386,44 @@ html {
 	color: black;
 }
 
-.store-elem:first-child,
-.store-elem:last-child {
+.store-elem.elem-0,
+.store-elem.elem-4 {
 	z-index: 0;
 }
 
-.store-elem:first-child .header,
-.store-elem:last-child .header {
-	width: 50%;
-	filter: blur(2px);
+.store-elem.elem-0 {
+	transform: translateX(calc(-1 * var(--store-elem-dist)));
 }
 
-.store-elem:nth-child(3) {
+.store-elem.elem-4 {
+	transform: translateX(var(--store-elem-dist));
+}
+
+.store-elem.elem-1 {
+	transform: translateX(calc((-1 * var(--store-elem-dist) / 1.85)));
+}
+
+.store-elem.elem-3 {
+	transform: translateX(calc(var(--store-elem-dist) / 1.85));
+}
+
+.store-elem.elem-0 .header,
+.store-elem.elem-4 .header {
+	transform: scale(50%);
+	filter: blur(5px);
+}
+
+.store-elem.elem-2 {
 	z-index: 10;
 }
 
-.store-elem:nth-child(3) .content {
+.store-elem.elem-2 .content {
 	opacity: 1;
 }
 
-.store-elem:nth-child(3) .header {
+.store-elem.elem-2 .header {
 	filter: none;
-	width: 90%;
+	transform: scale(75%);
 	border-radius: 56px;
 }
 
@@ -428,6 +455,7 @@ html {
 
 .input-number-plus-minus input[type=number] {
 	-moz-appearance: textfield;
+	appearance: textfield;
 }
 
 .input-number-plus-minus {

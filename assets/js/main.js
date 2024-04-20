@@ -92,6 +92,23 @@ const updateView = (inputId, value = 0) => {
 const push = (direction = 'right') => {
     const store = document.getElementById('store');
     const elems = store.getElementsByClassName('store-elem');
+
+    for (let i = 0; i < elems.length; i++) {
+        let newPosClass;
+        let oldPosClass;
+        let oldPosIndex;
+        
+        oldPosClass = [...elems[i].classList].find(className => className.includes('elem-'));
+        elems[i].classList.remove(oldPosClass);
+
+        oldPosIndex = parseInt(oldPosClass.split('-')[1]);
+        if (direction == 'right')
+            newPosClass = (oldPosIndex == elems.length - 1) ? `elem-0` : `elem-${oldPosIndex + 1}`;
+        else
+            newPosClass = (oldPosIndex == 0) ? `elem-${elems.length - 1}` : `elem-${oldPosIndex - 1}`;
+
+        elems[i].classList.add(newPosClass);
+    }
     /*const virtualStore = document.createElement('div');
     [...elems].forEach(elem => {
         elem.style.order++;
@@ -100,9 +117,9 @@ const push = (direction = 'right') => {
     });*/
 
     // TODO: Push direction!!!
-    if (direction == 'right') {
-        store.prepend(elems[elems.length - 1]);
-    } else {
-        store.append(elems[0])
-    }
+    // if (direction == 'right') {
+    //     store.prepend(elems[elems.length - 1]);
+    // } else {
+    //     store.append(elems[0])
+    // }
 }
