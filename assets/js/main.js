@@ -32,6 +32,14 @@ const setStoreEvents = () => {
     document.getElementById('store').ontouchmove = console.log;
 }
 
+var isBlocked = false;
+
+const unblockAnimation = () => {
+    setTimeout(() => {
+        isBlocked = false;
+    }, 500);
+}
+
 const storeClick = (event) => {
     event.preventDefault();
     event.stopImmediatePropagation();
@@ -46,10 +54,16 @@ const storeClick = (event) => {
     const json = JSON.stringify(converter(document.getElementById("example")), null, 4);
     */
 
+    if (isBlocked)
+        return ;
+    isBlocked = true;
+
     if (event.pageX > (store.clientWidth / 2) + store.offsetLeft)
         push('left');
     else
         push('right');
+
+    unblockAnimation();
 }
 
 const decreaseBoxes = (price) => {

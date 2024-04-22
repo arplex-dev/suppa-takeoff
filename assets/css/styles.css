@@ -1,5 +1,5 @@
 :root {
-	--store-elem-dist: 550px;
+	--store-elem-dist: clamp(375px, 34vw, 480px);
 }
 
 body,
@@ -286,7 +286,7 @@ html {
 	margin: 4rem 0;
 	padding: 0 2rem;
 	position: relative;
-	margin-bottom: 420px;
+	margin-bottom: clamp(300px, 50vw, 360px);
 	max-width: 900px;
 	min-width: 600px;
 	min-height: 400px;
@@ -335,7 +335,7 @@ html {
 	outline: 0;
 	margin: 0 -100px;
 	z-index: 1;
-	width: 500px;
+	width: clamp(350px, 32vw, 475px);
 	height: 500px;
 	transition: .5s;
 }
@@ -343,7 +343,7 @@ html {
 .store-elem .header {
 	transform: scale(60%);
 	filter: blur(2px);
-	transition: .2s;
+	transition: .5s;
 }
 
 .store-elem .header img {
@@ -360,7 +360,7 @@ html {
 	align-items: center;
 	flex-direction: column;
 	padding: 2rem 4rem;
-	min-width: 60%;
+	min-width: 300px;
 	max-height: 400px;
 	height: auto;
 	top: 100%;
@@ -475,6 +475,52 @@ html {
 	}
 }
 
+@media (max-width: 1050px) {
+	.store-elem {
+		width: 500px;
+	}
+
+	.store-elem.elem-0 .header,
+	.store-elem.elem-1 .header,
+	.store-elem.elem-2 .header,
+	.store-elem.elem-3 .header,
+	.store-elem.elem-4 .header {
+		transform: scale(75%);
+	}
+
+	.store-elem:not(.elem-2) .header {
+		opacity: 0;
+	}
+
+	.content .name {
+		font-size: clamp(1.2em, 3vw, 1.5em);
+	}
+
+	.content .description {
+		font-size: clamp(.9em, 2vw, 1em);
+	}
+}
+
+@media (max-width: 780px) {
+	.store::before,
+	.store::after {
+		width: 30px;
+		height: 30px;
+	}
+
+	.store::before {
+		left: 80px;
+	}
+
+	.store::after {
+		right: 80px;
+	}
+
+	.store .content {
+		min-width: clamp(230px, 35vw, 300px);
+	}
+}
+
 @media (max-width: 530px) {
 	.suppa-gallery .images {
 		width: 100%;
@@ -493,6 +539,46 @@ html {
 	.contact-btn-simple {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.section.secondary-action {
+		gap: 3rem;
+	}
+
+	.store {
+		margin-top: 0;
+	}
+
+	.store::after,
+	.store::before {
+		width: 20px;
+		height: 20px;
+		top: 113%;
+	}
+	
+	.store::before {
+		left: 210px;
+	}
+	
+	.store::after {
+		right: 210px;
+	}
+
+	.store-elem {
+		height: 400px;
+	}
+
+	.store-elem.elem-0 .header,
+	.store-elem.elem-1 .header,
+	.store-elem.elem-2 .header,
+	.store-elem.elem-3 .header,
+	.store-elem.elem-4 .header {
+		transform: scale(50%);
+	}
+
+	.store-elem .content {
+		padding: 2rem;
+		min-width: 230px;
 	}
 }
 
