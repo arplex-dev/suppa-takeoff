@@ -380,7 +380,7 @@ html {
 }
 
 .store-elem .content p {
-	text-align: left;
+	text-align: justify;
 	font-family: 'Raleway';
 	text-decoration: none;
 	color: black;
